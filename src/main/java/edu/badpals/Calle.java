@@ -1,12 +1,15 @@
 package edu.badpals;
 
+import jakarta.persistence.Column;
 import jakarta.persistence.Embeddable;
 import jakarta.persistence.JoinColumn;
 import jakarta.persistence.ManyToOne;
 
 @Embeddable
 public class Calle {
+    @Column(name = "via")
     private String via;
+    @Column(name = "cp")
     private String cp;
 
     public Calle(String via, String cp) {

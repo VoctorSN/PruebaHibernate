@@ -2,6 +2,7 @@ package edu.badpals;
 
 import jakarta.persistence.*;
 
+import java.util.ArrayList;
 import java.util.List;
 
 @Entity
@@ -15,10 +16,10 @@ public class Profesor extends Persona {
     private String alumnaPreferida;
 
    @OneToMany(mappedBy = "profesor")
-   private List<Alumno> tutorizados;
+   private List<Alumno> tutorizados = new ArrayList<>();;
 
    @ManyToMany(mappedBy = "profesores")
-   private List<Alumno> alumnos;
+   private List<Alumno> alumnos = new ArrayList<>();;
 
     public Profesor(int idPr, Calle calle, List<String> telefonos, List<Email> emails) {
         super(idPr, calle, telefonos, emails);

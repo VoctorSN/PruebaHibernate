@@ -2,6 +2,7 @@ package edu.badpals;
 
 import jakarta.persistence.*;
 
+import java.util.ArrayList;
 import java.util.List;
 
 @Entity
@@ -20,7 +21,7 @@ public class Alumno extends Persona {
     @ManyToMany
    @JoinTable(name = "profesores_alumnos",joinColumns =   @JoinColumn(name="id_al"),
    inverseJoinColumns = @JoinColumn(name="id_prof"))
-   private List<Profesor> profesores;
+   private List<Profesor> profesores = new ArrayList<>();;
 
 
     public Alumno(int idAl, Calle calle, List<String> telefonos, List<Email> emails, String asignaturaPreferida) {
