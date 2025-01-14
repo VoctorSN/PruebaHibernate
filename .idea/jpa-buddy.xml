@@ -1,6 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
-  <component name="JpaBuddyIdeaProjectConfig">
+  <component name="JpaBuddyIdeaProjectConfig" reUseTableSchema="true">
+    <option name="defaultUnitInitialized" value="true" />
     <option name="renamerInitialized" value="true" />
+    <option name="reverseEngineeringLastDbConnectionId" value="8deb3d65-da55-40f3-a39f-0f99c3ad997f" />
+    <option name="reLastEntityCreationPackage" value="src/main/java/edu/badpals" />
   </component>
 </project>
